@@ -18,8 +18,8 @@ app.get("/api/users", (req, res) => {
 });
 
 app.get('/api/products', (req, res) =>{
-    res.send([{}])
-})
+    res.send([{id: 123, name: "Chicken Pasta", price: 1250 }]);
+});
 
 app.listen(3000, () =>{
     console.log("server running at localhost:3000");
